@@ -8,13 +8,8 @@
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             margin: 0;
-            display: flex;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-             gap:20px;
         }
 
         .cabecalho {
@@ -26,21 +21,31 @@
             width: 100%;
         }
 
-        .card, .card2 {
+        .alinhamento {
+            display: flex;
+            justify-content: flex-start; /* alinha no lado esquerdo */
+            gap: 20px; /* espaço entre os cards */
+            padding: 40px; /* afasta dos cantos da tela */
+        }
+
+        .card1,
+        .card2 {
             background-color: white;
             border-radius: 12px;
-            box-shadow: 0px 4px 8px;
-            width: 300px;
-            text-align: center;
-            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 500px;  
+            height: 100px;
+            text-align: left;
+            padding: 150px;
         }
 
-        .card-content {
-            padding: 20px;
+        .card-content h3,
+        .card2 h4 {
+            margin-top: 0;
         }
 
-        .card2 {
-            padding: 40px;
+        .cardb p {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -49,15 +54,18 @@
 
     <div class="cabecalho">Comidinha da Vovó</div>
 
-    <div class="card">
-        <div class="card-content">
-            <h3>Bolo de Fubá</h3>
-            <p>Receita tradicional com sabor de infância.</p>
+    <div class="alinhamento">
+        <div class="card1">
+            <div class="cardB">
+                <h3>Bolo de Fubá</h3>
+                <p>Receita tradicional com sabor de infância.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card2">
-        <h4>Muito legal!</h4>
+        <div class="card2">
+            <h4>Muito legal!</h4>
+            <p>Experimente esta delícia caseira.</p>
+        </div>
     </div>
 
 </body>
