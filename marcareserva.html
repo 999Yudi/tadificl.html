@@ -1,1 +1,97 @@
 
+      <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        .cabecalho {
+            padding: 20px;
+            background-color: #FFC107;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+        }
+      
+      .destino select,
+        .destino input,
+        .destino button {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            min-width: 150px;
+        }
+
+        .destino button {
+            background-color: #1d00ea;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .destino button:hover {
+            background-color: #0000c9;
+        }
+
+.destino {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .price-label {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="cabecalho">Comidinha da Vovó</div>
+
+     <div class="passagens">
+        <h2><span class="highlight">Viagens em promoção</span> pra você conhecer Mape-Dôryan</h2>
+
+        <div class="destino">
+            <select name="filial">
+                <option value="">Filial</option>
+                <option value="sp">São Paulo - Barueri</option>
+                <option value="rj">Rio de Janeiro - Copacabana</option>
+                <option value="bh">Paraná - Batel</option>
+            </select>
+
+            <select name="destino">
+                <option value="Destino">Destino</option>
+                <option value="Destino">Mape-Doryan Capital</option>
+                <option value="Destino">Cracóvia</option>
+                <option value="Destino">Estetino</option>
+            </select>
+
+            <input type="date" name="data" placeholder="data">
+
+            <button>Buscar</button>
+        </div>
+    </div>
