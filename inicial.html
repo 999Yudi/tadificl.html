@@ -10,31 +10,38 @@
             font-family: 'Courier New', Courier, monospace;
             background-color: white;
             margin: 0;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+             gap:20px;
         }
 
         .cabecalho {
-            padding: 50px;
+            padding: 20px;
             background-color: #FFC107;
             text-align: center;
             font-size: 24px;
             font-weight: bold;
+            width: 100%;
         }
 
-       
-
-        .card{
-            background-color:white ;
+        .card, .card2 {
+            background-color: white;
             border-radius: 12px;
             box-shadow: 0px 4px 8px;
             width: 300px;
-            margin: 20px;
+            text-align: center;
+            padding: 20px;
         }
- 
-.card-content{
-    padding:16px;
-    text-align: center;
-}
-      
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card2 {
+            padding: 40px;
+        }
     </style>
 </head>
 
@@ -44,9 +51,13 @@
 
     <div class="card">
         <div class="card-content">
-<h3>Bolo de Fubá</h3>
-<p>Receita tradicional com sabor de infância.</p>
+            <h3>Bolo de Fubá</h3>
+            <p>Receita tradicional com sabor de infância.</p>
         </div>
+    </div>
+
+    <div class="card2">
+        <h4>Muito legal!</h4>
     </div>
 
 </body>
