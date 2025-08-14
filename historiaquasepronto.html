@@ -1,82 +1,110 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor da Alma - História</title>
+    <title>Comidinha da Vovó</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             margin: 0;
-            padding: 0;
         }
 
-        .cabecalho {
-            padding: 20px;
-            background-color: #FFC107;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .conteudo {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .conteudo p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        .imagens {
+        .header {
             display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: black;
+            height: 80px;
         }
 
-        .imagens img {
-            width: 28%;
-            border-radius: 8px;
-            box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+        .header p {
+            color: white;
+            margin: 0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* layout geral abaixo do header */
+        .main {
+            display: flex;
+            margin: 40px;
+        }
+
+        /* coluna de cards alinhados à esquerda */
+        .cards-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-right: 40px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0px 8px 12px rgba(0,0,0,0.3);
+            font-size: 18px;
+        }
+
+        /* texto centralizado ao lado dos cards */
+        .historia {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="cabecalho">Sabor da Alma</div>
+    <div class="header">
+        <p>Restaurantes</p>
+        <p>História</p>
+        <h1>Comidinha da Vovó</h1>
+        <p>Pratos da Casa</p>
+        <p>Reserva</p>
+    </div>
 
-    <div class="conteudo">
-        <p>Era uma vez um jovem chamado Lucas, cheio de sonhos e paixão pela culinária. Com muito esforço, ele abriu um
-            pequeno restaurante chamado “Sabor da Alma”, onde cada prato contava uma história e transmitia carinho em
-            cada garfada. O restaurante logo se tornou famoso na cidade por sua comida deliciosa e ambiente acolhedor.
-        </p>
+    <div class="main">
+        <!-- cards alinhados à esquerda -->
+        <div class="cards-column">
+            <div class="card"><p>foto do velho</p></div>
+            <div class="card"><p>foto do restaurante</p></div>
+            <div class="card"><p>foto da filha</p></div>
+            <div class="card"><p>foto do restaurante</p></div>
+            <div class="card"><p>foto da filha velha</p></div>
+        </div>
 
-        <p>Infelizmente, Lucas adoeceu repentinamente e faleceu, deixando o restaurante sem seu criador. Sua filha,
-            Clara, ainda jovem, decidiu honrar o legado do pai. Apesar da tristeza e da falta de experiência, ela
-            assumiu o restaurante com coragem e dedicação.</p>
+        <!-- texto centralizado ao lado -->
+        <div class="historia">
+            <p>Era uma vez um jovem chamado Lucas, cheio de sonhos e paixão pela culinária. Com muito esforço, ele abriu um
+                pequeno restaurante chamado “Sabor da Alma”, onde cada prato contava uma história e transmitia carinho em
+                cada garfada. O restaurante logo se tornou famoso na cidade por sua comida deliciosa e ambiente acolhedor.
+            </p>
 
-        <p>Clara trouxe novas ideias, manteve as receitas especiais do pai e, aos poucos, conquistou clientes antigos e
-            novos. Com o tempo, o “Sabor da Alma” se tornou um símbolo de perseverança, amor e família, provando que a
-            paixão de Lucas continuava viva através de sua filha.</p>
+            <p>Infelizmente, Lucas adoeceu repentinamente e faleceu, deixando o restaurante sem seu criador. Sua filha,
+                Clara, ainda jovem, decidiu honrar o legado do pai. Apesar da tristeza e da falta de experiência, ela
+                assumiu o restaurante com coragem e dedicação.</p>
 
-        <div class="imagens">
-            <img src="https://img.freepik.com/fotos-gratis/restaurante-interior_1127-3394.jpg" alt="Restaurante 1">
-            <img src="https://img.freepik.com/fotos-premium/interior-do-restaurante-classico_1203-1781.jpg"
-                alt="Restaurante 2">
-            <img src="https://img.freepik.com/fotos-gratis/interior-moderno-de-restaurante_1127-3396.jpg"
-                alt="Restaurante 3">
+            <p>Clara trouxe novas ideias, manteve as receitas especiais do pai e, aos poucos, conquistou clientes antigos e
+                novos. Com o tempo, o “Sabor da Alma” se tornou um símbolo de perseverança, amor e família, provando que a
+                paixão de Lucas continuava viva através de sua filha.</p>
         </div>
     </div>
 
 </body>
-
 </html>
