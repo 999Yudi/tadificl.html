@@ -4,40 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comidinha da Vovó</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
             background-color: rgb(255, 255, 255);
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .cabecalho {
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             padding: 20px;
-            background-color: #FFC107;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
+            background-color: black;
             width: 100%;
+            height: 80px;
         }
 
-        .card{ /*vamo ver se vai ser util, masa deixa ai*/
-            background-color: rgb(255, 255, 255);
-            border-radius: 12px -9px;
-            box-shadow: 0px 8px 12px;
-            width: 100px;
-            height: 100px;
-            padding: 100px;
+        .header p {
+            color: white;
+            margin: 0;
+            font-weight: bold;
+            cursor: pointer;
         }
 
-               
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 12px;
+            width: 600px;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+            margin: 40px 0;
+            font-size: 22px;
+            text-align: center;
+            /* centraliza o texto */
+        }
+
+        .card2 {
+            padding: 30px;
+            border-radius: 12px;
+            width: 600px;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+            margin: 40px 0;
+            font-size: 22px;
+            text-align: center;
+        }
+
+
+        .card img {
+            width: 80%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
+
+        .card p {
+            margin: 15px 0;
+            font-size: 24px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="cabecalho">Comidinha da Vovó</div>
-    <div class="mensagem"></div>
-    <div class="card"></div>
-<h1> Sua reserva já esta pronta! Enviaremos para seu email as informações da sua reserva</h1>
-<p> Quer descobrir mais das receitas da sua vovo favorita? acesse a aba de pratos principais!</p>
+    <div class="header">
+        <p>Restaurantes</p>
+        <p>História</p>
+        <h1>Comidinha da Vovó</h1>
+        <p>Pratos da Casa</p>
+        <p>Reserva</p>
+    </div>
+
+    <div class="card">
+
+        <div class="card2"></div>
+
+        <p>Muito obrigado pela preferência!</p>
+        <p>Sua reserva já está no nosso sistema e estaremos esperando ansiosamente pela sua presença. Basta mostrar o QR
+            code que está na tela.</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/QR_Code.png/320px-QR_Code.png"
+            alt="QR Code">
+    </div>
+
+</body>
+
+</html>
