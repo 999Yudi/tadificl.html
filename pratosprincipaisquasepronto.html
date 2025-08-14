@@ -1,143 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-
+    <title>Comidinha da Vovó</title>
     <style>
-
         body {
-
             font-family: 'Courier New', Courier, monospace;
-
-            background-color: #fff;
-
-            margin: 0
-
+            background-color: rgb(255, 255, 255);
+            margin: 0;
         }
 
-
-
-        .cabecalho {
-
-            padding: 20px;
-
-            background-color: #FFC107;
-
-            text-align: center;
-
-            font-size: 24px;
-
-            font-weight: 700;
-
-            width: 100%
-
-        }
-
-
-
-        .alinhamento {
-
+        .header {
             display: flex;
-
-            justify-content: center;
-
-            align-items: flex-start;
-
-            gap: 20px;
-
-            padding: 40px;
-
-            flex-wrap: wrap
-
-        }
-
-
-
-        .card1,
-
-        .card2,
-
-        .card3 {
-
-            background-color: #fff;
-
-            border-radius: 12px;
-
-            box-shadow: 0 4px 12px rgb(0 0 0 / .1);
-
-            width: 300px;
-
-            height: auto;
-
-            text-align: left;
-
+            align-items: center;
+            justify-content: space-around;
             padding: 20px;
-
-            margin-top: 0
-
+            background-color: black;
+            height: 80px;
         }
 
-
-
-        .card123 p {
-
-            margin-bottom: 0
-
+        .header p {
+            color: white;
+            margin: 0;
+            font-weight: bold;
+            cursor: pointer;
         }
 
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card p {
+            color: blue;
+            font-weight: bold;
+            margin-top: 10px;
+        }
     </style>
-
 </head>
-
-
 
 <body>
 
-    <div class="cabecalho">Comidinha da Vovó</div>
+    <div class="header">
+        <p>Restaurantes</p>
+        <p>História</p>
+        <h1>Comidinha da Vovó</h1>
+        <p>Pratos da Casa</p>
+        <p>Reserva</p>
+    </div>
 
-    <div class="alinhamento">
-
-        <div class="card1">
-
-            <div class="card123">
-
-                <h3>Bolo de Fubá</h3>
-
-                <p>Receita tradicional com sabor de infância.</p>
-
-            </div>
-
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://www.gazetadopovo.com.br/ra/2019/05/09154236/camarao-coco-bambu.jpg" alt="Congragulations">
+            <p>Congragulations</p>
         </div>
-
-        <div class="card2">
-
-            <h4>Muito legal!</h4>
-
-            <p>Experimente esta delícia caseira.</p>
-
+        <div class="card">
+            <img src="https://www.gazetadopovo.com.br/ra/2019/05/09154236/camarao-coco-bambu.jpg" alt="Doomsday">
+            <p>Doomsday</p>
         </div>
-
-        <div class="card3">
-
-            <h4>Doce de Leite</h4>
-
-            <p>Cremoso e feito no fogão à lenha.</p>
-
+        <div class="card">
+            <img src="https://www.gazetadopovo.com.br/ra/2019/05/09154236/camarao-coco-bambu.jpg" alt="Camarão Recheado">
+            <p>Camarão recheado com molho da casa</p>
         </div>
-
     </div>
 
 </body>
-
-
 
 </html>
