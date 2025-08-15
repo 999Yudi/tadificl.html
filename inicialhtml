@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidinha da Vovó</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            background: linear-gradient(to right, black, yellow);
+            height: 80px;
+        }
+
+        .header p {
+            color: white;
+            margin: 0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            /* centraliza os cards */
+            gap: 40px;
+            /* espaço entre os cards */
+            margin-top: 60px;
+            flex-wrap: wrap;
+            /* quebra linha se a tela for pequena */
+        }
+
+        .card {
+            padding: 150px;
+            border-radius: 12px;
+            width: 400px;
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .card h1 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <p>Restaurantes</p>
+        <p>História</p>
+        <h1>Comidinha da Vovó</h1>
+        <p>Pratos da Casa</p>
+        <p>Reserva</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1161564840/photo/smiling-waiter-serving-food-to-friends-at-restaurant.jpg?s=612x612&w=0&k=20&c=hYTsSUmjZ27Nz9Yy_a0cLtxqQ-Mrkklpdov7Jp7HW0g="
+                alt="Garçom Sergio">
+            <p>Sergio foi declarado o melhor garçom do nosso restaurante!</p>
+            <h1>Trabalhando desde 2021 conosco, sempre foi comprometido e nunca nos deixou na mão...</h1>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/rRD6SyQ7/Chat-GPT-Image-14-de-ago-de-2025-15-15-36.png"
+                alt="Chat-GPT-Image-14-de-ago-de-2025-15-15-36">
+            <p>O calendário de reservas para agosto de 2025 já foi atualizado!</p>
+            <h1>Corra para garantir sua reserva e experimentar as delícias da vovó!</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
