@@ -17,7 +17,7 @@
             align-items: center;
             justify-content: space-around;
             padding: 20px;
-            background-color: black;
+            background: linear-gradient(to right, black, yellow);
             height: 80px;
         }
 
@@ -34,23 +34,44 @@
             font-size: 28px;
         }
 
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 40px;
+            position: relative;
+        }
+
         .card {
             position: absolute;
-            top: 150px; 
-            left: 40px; 
+            top: 15px;
+            left: 40px;
             padding: 20px;
             border-radius: 12px;
             width: 300px;
             box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
-            font-size: 18px;
+            font-size: 20px;
             background-color: #fff;
+            text-align: center;
         }
 
         .card img {
             width: 100%;
             border-radius: 12px;
             display: block;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
+        }
+
+        .receita {
+            margin: 0 auto;
+            max-width: 700px;
+            font-size: 20px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        .receita p {
+            margin: 0;
         }
     </style>
 </head>
@@ -60,16 +81,48 @@
     <div class="header">
         <p>Restaurantes</p>
         <p>História</p>
-        <h1>Comidinha da Vovó</h1>
+        <h1>Rock in kitchen</h1>
         <p>Pratos da Casa</p>
         <p>Reserva</p>
     </div>
 
-    <div class="card">
-        <img src="https://www.culinariadavovo.com.br/wp-content/uploads/2021/02/torta-de-frango-low-carb-e1614273360109.jpg" alt="Torta de Frango">
-        <p>Torta de frango low carb</p>
+    <div class="content">
+        <div class="card">
+            <img src="https://i.ibb.co/2sRrD2X/curry-frango.jpg" alt="Curry indiano">
+            <p>Curry Indiano de Frango</p>
+        </div>
+
+        <div class="receita">
+            <p>
+                <strong>Ingredientes (4 porções):</strong><br>
+                500g de peito de frango em cubos<br>
+                2 colheres de sopa de óleo vegetal (ou ghee)<br>
+                1 cebola média picada<br>
+                2 dentes de alho picados<br>
+                1 pedaço de gengibre fresco (2 cm) picado<br>
+                2 tomates médios picados ou 200g de tomate pelado<br>
+                1 colher de chá de cominho em pó<br>
+                1 colher de chá de coentro em pó<br>
+                1 colher de chá de cúrcuma (açafrão-da-terra)<br>
+                1 colher de chá de garam masala<br>
+                1/2 colher de chá de pimenta chili em pó (opcional)<br>
+                200 ml de leite de coco<br>
+                Sal a gosto<br>
+                Coentro fresco picado para finalizar<br><br>
+
+                <strong>Modo de Preparo:</strong><br>
+                1. Aqueça o óleo e refogue a cebola até dourar. Acrescente alho e gengibre por 1-2 minutos.<br>
+                2. Misture cominho, coentro, cúrcuma e pimenta chili. Refogue por 1 minuto.<br>
+                3. Adicione o frango em cubos e cozinhe por 5-7 minutos.<br>
+                4. Junte os tomates picados e cozinhe por 5 minutos.<br>
+                5. Acrescente o leite de coco, misture e cozinhe em fogo baixo por 10-15 minutos até engrossar.<br>
+                6. Ajuste o sal, adicione o garam masala e salpique coentro fresco.<br><br>
+
+                <strong>Sugestão de Servir:</strong> Acompanhe com arroz basmati ou pão naan. Pode adicionar legumes como batata, cenoura ou ervilhas.
+            </p>
+        </div>
     </div>
 
 </body>
-</html>
 
+</html>
