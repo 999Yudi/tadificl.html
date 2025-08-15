@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet">
 
-    <title>Comidinha da Vovó</title>
+    <title>Reserva</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -23,7 +23,7 @@
             align-items: center;
             justify-content: space-around;
             padding: 20px;
-            background-color: black;
+            background: linear-gradient(to right, black, yellow);
             height: 80px;
         }
 
@@ -54,18 +54,24 @@
 
         .card {
             padding: 15px;
-            margin-top: 40px;
             border-radius: 12px;
             width: 300px;
             box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
             font-size: 18px;
             text-align: center;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
         }
 
         .destino {
             font-weight: bold;
             font-size: 16px;
-            margin: 30px auto;
+            margin: 30px auto 10px auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -103,6 +109,14 @@
         .destino button:hover {
             background-color: #0000c9;
         }
+
+        .sub {
+            color: yellow;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -128,31 +142,35 @@
             </select>
 
             <select name="destino">
-                <option value="Destino">Destino</option>
-                <option value="Destino">Mape-Doryan Capital</option>
-                <option value="Destino">Cracóvia</option>
-                <option value="Destino">Estetino</option>
+                <option value="Destino">Horario</option>
+                <option value="Destino">20:00</option>
+                <option value="Destino">21:00</option>
+                <option value="Destino">22:00</option>
             </select>
 
             <input type="date" name="data" placeholder="data">
-            <button>Buscar</button>
+            <button>Terminar</button>
         </div>
     </div>
+
+    <div class="sub">Algumas dicas de pratos para você experimentar!</div>
 
     <div class="cards-container">
         <div class="card">
-            <p>Dia tal é aniversário do restaurante</p>
+            <p>Ozzy Osbourne</p>
+            <img src="https://www.saboresajinomoto.com.br/uploads/images/recipes/burrito-de-frango.jpg" alt="Burrito de frango">
         </div>
 
         <div class="card">
-            <p>Promoção especial para clientes</p>
+            <p>Kurt Cobain</p>
+            <img src="https://canaldareceita.com.br/wp-content/uploads/2021/07/macarrao-com-queijo.jpg" alt="Mac and Cheese">
         </div>
 
         <div class="card">
-            <p>Novo prato no cardápio!</p>
+            <p>Bruce Dickinson</p>
+            <img src="https://mydeliciousmeals.com/storage/recipes/easy-fish-fingers.jpg" alt="Fish Fingers">
         </div>
     </div>
-
 </body>
 
 </html>
