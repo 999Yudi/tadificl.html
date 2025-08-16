@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comidinha da Vovó</title>
+    <title>prato2</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -17,7 +17,7 @@
             align-items: center;
             justify-content: space-around;
             padding: 20px;
-            background-color: black;
+            background: linear-gradient(to right, black, yellow);
             height: 80px;
         }
 
@@ -34,23 +34,52 @@
             font-size: 28px;
         }
 
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 40px;
+            padding-left: 40px;
+        }
+
         .card {
-            position: absolute;
-            top: 150px; 
-            left: 40px; 
+            flex-shrink: 0;
+            width: 300px;
             padding: 20px;
             border-radius: 12px;
-            width: 300px;
             box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
-            font-size: 18px;
+            font-size: 20px;
             background-color: #fff;
+            text-align: center;
         }
 
         .card img {
             width: 100%;
             border-radius: 12px;
             display: block;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
+        }
+
+        .receita {
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .curiosidade {
+            margin-top: 20px;
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .curiosidade h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #333;
         }
     </style>
 </head>
@@ -60,16 +89,48 @@
     <div class="header">
         <p>Restaurantes</p>
         <p>História</p>
-        <h1>Comidinha da Vovó</h1>
+        <h1>Rock in kitchen</h1>
         <p>Pratos da Casa</p>
         <p>Reserva</p>
     </div>
 
-    <div class="card">
-        <img src="https://www.culinariadavovo.com.br/wp-content/uploads/2021/02/torta-de-frango-low-carb-e1614273360109.jpg" alt="Torta de Frango">
-        <p>Torta de frango low carb</p>
+    <div class="content">
+        <div class="card">
+            <img src="https://i.ibb.co/HT20YFRV/Restaurante-Japones-Curitiba.webp" alt="Curry indiano">
+            <p>Curry Indiano de Frango</p>
+        </div>
+
+        <div class="receita">
+            <p>
+                <strong>Receita de Sushi Simples (4 porções):</strong><br><br>
+                Ingredientes:<br>
+                2 xícaras de arroz para sushi<br>
+                2 ½ xícaras de água<br>
+                4 colheres de sopa de vinagre de arroz<br>
+                2 colheres de sopa de açúcar<br>
+                1 colher de chá de sal<br>
+                6 folhas de alga nori<br>
+                200g de salmão ou atum fresco (ou legumes como pepino e cenoura)<br>
+                Molho de soja, gengibre em conserva e wasabi para servir<br><br>
+
+                Modo de Preparo:<br>
+                1. Lave o arroz em água fria até a água sair clara.<br>
+                2. Cozinhe o arroz com a água em fogo médio-baixo até absorver toda a água.<br>
+                3. Misture vinagre, açúcar e sal, e incorpore ao arroz ainda quente. Deixe esfriar.<br>
+                4. Coloque uma folha de nori sobre a esteira de bambu, espalhe o arroz deixando 2 cm livres na borda.<br>
+                5. Adicione o recheio (peixe ou legumes) e enrole firme com a ajuda da esteira.<br>
+                6. Corte em pedaços iguais e sirva com molho de soja, gengibre e wasabi.
+            </p>
+
+            <div class="curiosidade">
+                <h2>Curiosidade sobre David Bowie:</h2>
+                <p>
+                    David Bowie era fã de culinária japonesa e chegou a mencionar em entrevistas que adorava sushi, especialmente quando viajava pelo Japão. Ele tinha o hábito de experimentar restaurantes locais e apreciava a simplicidade e a delicadeza do sushi, que combinava com seu gosto refinado por experiências culturais únicas.
+                </p>
+            </div>
+        </div>
     </div>
 
 </body>
-</html>
 
+</html>
