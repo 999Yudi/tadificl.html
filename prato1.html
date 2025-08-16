@@ -39,16 +39,14 @@
             align-items: flex-start;
             gap: 40px;
             margin-top: 40px;
-            position: relative;
+            padding-left: 40px;
         }
 
         .card {
-            position: absolute;
-            top: 15px;
-            left: 40px;
+            flex-shrink: 0;
+            width: 300px;
             padding: 20px;
             border-radius: 12px;
-            width: 300px;
             box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
             font-size: 20px;
             background-color: #fff;
@@ -62,16 +60,31 @@
             margin-bottom: 10px;
         }
 
-        .receita {
-            margin: 0 auto;
-            max-width: 700px;
-            font-size: 20px;
-            line-height: 1.7;
-            text-align: center;
+        .receita-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
         }
 
-        .receita p {
-            margin: 0;
+        .receita {
+            font-size: 20px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .curiosidade {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .curiosidade h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #333;
         }
     </style>
 </head>
@@ -88,38 +101,46 @@
 
     <div class="content">
         <div class="card">
-            <img src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-43d8-61fd-87e0-ceecc24419b8/raw?se=2025-08-16T18%3A35%3A32Z&sp=r&sv=2024-08-04&sr=b&scid=ad271736-8d1f-5915-8d75-d9dba782a995&skoid=b0fd38cc-3d33-418f-920e-4798de4acdd1&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-16T17%3A26%3A29Z&ske=2025-08-17T17%3A26%3A29Z&sks=b&skv=2024-08-04&sig=LwWYjwphdn1kOQTOP9zqf39sH98PzLzZ0TWs6pbMtrA%3D" alt="Curry indiano">
+            <img src="https://i.ibb.co/8DZcxVMt/Curry.png" alt="Curry indiano">
             <p>Curry Indiano de Frango</p>
         </div>
 
-        <div class="receita">
-            <p>
-                <strong>Ingredientes (4 porções):</strong><br>
-                500g de peito de frango em cubos<br>
-                2 colheres de sopa de óleo vegetal (ou ghee)<br>
-                1 cebola média picada<br>
-                2 dentes de alho picados<br>
-                1 pedaço de gengibre fresco (2 cm) picado<br>
-                2 tomates médios picados ou 200g de tomate pelado<br>
-                1 colher de chá de cominho em pó<br>
-                1 colher de chá de coentro em pó<br>
-                1 colher de chá de cúrcuma (açafrão-da-terra)<br>
-                1 colher de chá de garam masala<br>
-                1/2 colher de chá de pimenta chili em pó (opcional)<br>
-                200 ml de leite de coco<br>
-                Sal a gosto<br>
-                Coentro fresco picado para finalizar<br><br>
+        <div class="receita-container">
+            <div class="receita">
+                <p>
+                    <strong>Ingredientes (4 porções):</strong><br>
+                    500g de peito de frango em cubos<br>
+                    2 colheres de sopa de óleo vegetal (ou ghee)<br>
+                    1 cebola média picada<br>
+                    2 dentes de alho picados<br>
+                    1 pedaço de gengibre fresco (2 cm) picado<br>
+                    2 tomates médios picados ou 200g de tomate pelado<br>
+                    1 colher de chá de cominho em pó<br>
+                    1 colher de chá de coentro em pó<br>
+                    1 colher de chá de cúrcuma (açafrão-da-terra)<br>
+                    1 colher de chá de garam masala<br>
+                    1/2 colher de chá de pimenta chili em pó (opcional)<br>
+                    200 ml de leite de coco<br>
+                    Sal a gosto<br>
+                    Coentro fresco picado para finalizar<br><br>
 
-                <strong>Modo de Preparo:</strong><br>
-                1. Aqueça o óleo e refogue a cebola até dourar. Acrescente alho e gengibre por 1-2 minutos.<br>
-                2. Misture cominho, coentro, cúrcuma e pimenta chili. Refogue por 1 minuto.<br>
-                3. Adicione o frango em cubos e cozinhe por 5-7 minutos.<br>
-                4. Junte os tomates picados e cozinhe por 5 minutos.<br>
-                5. Acrescente o leite de coco, misture e cozinhe em fogo baixo por 10-15 minutos até engrossar.<br>
-                6. Ajuste o sal, adicione o garam masala e salpique coentro fresco.<br><br>
+                    <strong>Modo de Preparo:</strong><br>
+                    1. Aqueça o óleo e refogue a cebola até dourar. Acrescente alho e gengibre por 1-2 minutos.<br>
+                    2. Misture cominho, coentro, cúrcuma e pimenta chili. Refogue por 1 minuto.<br>
+                    3. Adicione o frango em cubos e cozinhe por 5-7 minutos.<br>
+                    4. Junte os tomates picados e cozinhe por 5 minutos.<br>
+                    5. Acrescente o leite de coco, misture e cozinhe em fogo baixo por 10-15 minutos até engrossar.<br>
+                    6. Ajuste o sal, adicione o garam masala e salpique coentro fresco.<br><br>
+                </p>
+            </div>
 
+           <div class="curiosidade">
+    <h2>Curiosidade sobre Freddie Mercury:</h2>
+    <p>
+        Freddie Mercury, vocalista do Queen, era conhecido por seu amor pela culinária indiana. Ele adorava curry, especialmente pratos ricos em especiarias como o curry de frango, e frequentemente mencionava em entrevistas que a comida indiana era uma das suas favoritas, combinando sabores intensos e aromáticos que ele apreciava muito.
+    </p>
+</div>
 
-            </p>
         </div>
     </div>
 
