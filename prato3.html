@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comidinha da Vovó</title>
+    <title>prato3</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -18,7 +17,7 @@
             align-items: center;
             justify-content: space-around;
             padding: 20px;
-            background-color: black;
+            background: linear-gradient(to right, black, yellow);
             height: 80px;
         }
 
@@ -35,23 +34,52 @@
             font-size: 28px;
         }
 
+        .content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 40px;
+            padding-left: 40px;
+        }
+
         .card {
-            position: absolute;
-            top: 150px; 
-            left: 40px; 
+            flex-shrink: 0;
+            width: 300px;
             padding: 20px;
             border-radius: 12px;
-            width: 300px;
             box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
-            font-size: 18px;
+            font-size: 20px;
             background-color: #fff;
+            text-align: center;
         }
 
         .card img {
             width: 100%;
             border-radius: 12px;
             display: block;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
+        }
+
+        .receita {
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .curiosidade {
+            margin-top: 20px;
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .curiosidade h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #333;
         }
     </style>
 </head>
@@ -61,15 +89,49 @@
     <div class="header">
         <p>Restaurantes</p>
         <p>História</p>
-        <h1>Comidinha da Vovó</h1>
+        <h1>Rock in kitchen</h1>
         <p>Pratos da Casa</p>
         <p>Reserva</p>
     </div>
 
-    <div class="card">
-        <img src="https://www.culinariadavovo.com.br/wp-content/uploads/2021/02/torta-de-frango-low-carb-e1614273360109.jpg" alt="Torta de Frango">
-        <p>Torta de frango low carb</p>
+    <div class="content">
+        <div class="card">
+            <img src="https://i.ibb.co/hFg6bMrs/f3bd5cc09ea12864b3c9a3a9a3d5.jpg" alt="Curry indiano">
+            <p>Taco</p>
+        </div>
+
+        <div class="receita">
+            <p>
+                <strong>Receita de Tacos Simples (4 porções):</strong><br><br>
+                Ingredientes:<br>
+                8 tortillas de milho ou trigo<br>
+                400g de carne moída ou frango desfiado<br>
+                1 cebola média picada<br>
+                2 dentes de alho picados<br>
+                1 tomate picado<br>
+                1 colher de chá de cominho em pó<br>
+                1 colher de chá de páprica<br>
+                Sal e pimenta a gosto<br>
+                Folhas de alface, queijo ralado, guacamole e molho de sua preferência<br><br>
+
+                Modo de Preparo:<br>
+                1. Aqueça uma frigideira com óleo e refogue a cebola e o alho até dourarem.<br>
+                2. Adicione a carne ou frango, tempere com cominho, páprica, sal e pimenta. Cozinhe até dourar.<br>
+                3. Aqueça as tortillas rapidamente na frigideira.<br>
+                4. Monte os tacos com carne, alface, tomate, queijo e guacamole.<br>
+                5. Sirva imediatamente com molho de sua preferência.
+            </p>
+
+
+            <div class="curiosidade">
+                <h2>Curiosidade sobre Slash:</h2>
+                <p>
+                    Slash, guitarrista do Guns N' Roses, também é fã de comida mexicana e mencionou em entrevistas que adora tacos. Ele gosta de experimentar tacos autênticos sempre que viaja pelo México, apreciando o sabor picante e as combinações de ingredientes frescos.
+                </p>
+            </div>
+        </div>
     </div>
 
 </body>
+
 </html>
