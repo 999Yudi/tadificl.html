@@ -11,6 +11,7 @@
             background-color: rgb(255, 255, 255);
             margin: 0;
         }
+
         .header {
             display: flex;
             align-items: center;
@@ -19,25 +20,31 @@
             background: linear-gradient(to right, black, yellow);
             height: 80px;
         }
-        .header a {
+
+        .header p {
             color: white;
             margin: 0;
             font-weight: bold;
             cursor: pointer;
-            text-decoration: none;
         }
+
         .header h1 {
             color: white;
             margin: 0;
             font-size: 28px;
         }
+
         .container {
             display: flex;
             justify-content: center;
+          
             gap: 40px;
+           
             margin-top: 60px;
             flex-wrap: wrap;
+         
         }
+
         .card {
             padding: 150px;
             border-radius: 12px;
@@ -47,16 +54,19 @@
             text-align: center;
             background-color: white;
         }
+
         .card img {
             width: 100%;
             border-radius: 12px;
             display: block;
             margin-bottom: 15px;
         }
+
         .card p {
             font-size: 20px;
             margin: 10px 0;
         }
+
         .card h1 {
             font-size: 22px;
             margin: 10px 0;
@@ -66,27 +76,30 @@
 
 <body>
 
-<div class="header">
-    <a href="inicial.html">Inicial</a>
-    <a href="historia.html">História</a>
-    <h1>Rock in Kitchen</h1>
-    <a href="pratos.html">Pratos da Casa</a>
-    <a href="reserva.html">Reserva</a>
-</div>
-
-<div class="container">
-    <div class="card">
-        <img src="https://i.ibb.co/3mFgvNBB/images-4.jpg" alt="Garçom Sergio">
-        <p>Sergio foi declarado o melhor garçom do nosso restaurante!</p>
-        <h1>Trabalhando desde 2021 conosco, sempre foi comprometido e nunca nos deixou na mão...</h1>
+    <div class="header">
+        <p>Restaurantes</p>
+        <p>História</p>
+        <h1>Rock in Kitchen</h1>
+        <p>Pratos da Casa</p>
+        <p>Reserva</p>
     </div>
 
-    <div class="card">
-        <img src="https://i.ibb.co/rRD6SyQ7/Chat-GPT-Image-14-de-ago-de-2025-15-15-36.png" alt="Calendário de reservas">
-        <p>O calendário de reservas para agosto de 2025 já foi atualizado!</p>
-        <h1>Corra para garantir sua reserva e experimentar as delícias da vovó!</h1>
+    <div class="container">
+        <div class="card">
+            <img src="https://i.ibb.co/3mFgvNBB/images-4.jpg"
+                alt="Garçom Sergio">
+            <p>Sergio foi declarado o melhor garçom do nosso restaurante!</p>
+            <h1>Trabalhando desde 2021 conosco, sempre foi comprometido e nunca nos deixou na mão...</h1>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/rRD6SyQ7/Chat-GPT-Image-14-de-ago-de-2025-15-15-36.png"
+                alt="Chat-GPT-Image-14-de-ago-de-2025-15-15-36">
+            <p>O calendário de reservas para agosto de 2025 já foi atualizado!</p>
+            <h1>Corra para garantir sua reserva e experimentar as delícias da vovó!</h1>
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
