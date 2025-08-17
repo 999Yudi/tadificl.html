@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
-
     <title>Reserva</title>
     <style>
         body {
@@ -16,7 +11,6 @@
             margin: 0;
             text-align: center;
         }
-
         .header {
             display: flex;
             align-items: center;
@@ -25,7 +19,6 @@
             background: linear-gradient(to right, black, yellow);
             height: 80px;
         }
-
         .header a {
             color: white;
             margin: 0;
@@ -33,19 +26,50 @@
             cursor: pointer;
             text-decoration: none;
         }
-
         .header h1 {
             color: white;
             margin: 0;
             font-size: 28px;
         }
-
-
+        .destino {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 30px auto 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .destino .inputs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .destino select,
+        .destino input,
+        .destino a {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            min-width: 150px;
+            text-decoration: none;
+        }
+        .destino a {
+            background-color: #1d00ea;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+        .destino a:hover {
+            background-color: #0000c9;
+        }
     </style>
 </head>
 <body>
-    <div class="font"></div>
-
     <div class="header">
         <a href="inicial.html">Inicial</a>
         <a href="historia.html">História</a>
@@ -54,6 +78,24 @@
         <a href="reserva.html">Reserva</a>
     </div>
 
-
+    <div class="destino">
+        <p>Escolha uma de nossas unidades e faça sua reserva</p>
+        <div class="inputs">
+            <select name="filial">
+                <option value="">Filial</option>
+                <option value="sp">São Paulo - Barueri</option>
+                <option value="rj">Rio de Janeiro - Copacabana</option>
+                <option value="bh">Paraná - Batel</option>
+            </select>
+            <select name="destino">
+                <option value="Destino">Horario</option>
+                <option value="Destino">20:00</option>
+                <option value="Destino">21:00</option>
+                <option value="Destino">22:00</option>
+            </select>
+            <input type="date" name="data">
+            <a href="final.html">Terminar</a>
+        </div>
+    </div>
 </body>
 </html>
