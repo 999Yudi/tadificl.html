@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,15 +26,12 @@
             height: 80px;
         }
 
-        .font {
-            font-family: "Roboto Flex", sans-serif;
-        }
-
-        .header p {
+        .header a {
             color: white;
             margin: 0;
             font-weight: bold;
             cursor: pointer;
+            text-decoration: none;
         }
 
         .header h1 {
@@ -44,140 +40,20 @@
             font-size: 28px;
         }
 
-        .cards-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
-        }
 
-        .card {
-            padding: 15px;
-            border-radius: 12px;
-            width: 250px;
-            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
-            font-size: 18px;
-            text-align: center;
-            background-color: white;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .card2 h1 {
-            color:#0000c9;
-
-        }
-
-        .destino {
-            font-weight: bold;
-            font-size: 16px;
-            margin: 30px auto 10px auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .destino p {
-            margin: 0;
-        }
-
-        .destino .inputs {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .destino select,
-        .destino input,
-        .destino button {
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            min-width: 150px;
-        }
-
-        .destino button {
-            background-color: #1d00ea;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .destino button:hover {
-            background-color: #0000c9;
-        }
-
-        .sub {
-            color: yellow;
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 30px;
-            text-align: center;
-        }
     </style>
 </head>
-
 <body>
     <div class="font"></div>
 
     <div class="header">
-        <p>Inicial</p>
-        <p>História</p>
-        <h1>Rock in kitchen</h1>
-        <p>Pratos da Casa</p>
-        <p>Reserva</p>
+        <a href="inicial.html">Inicial</a>
+        <a href="historia.html">História</a>
+        <h1>Rock in Kitchen</h1>
+        <a href="pratos.html">Pratos da Casa</a>
+        <a href="reserva.html">Reserva</a>
     </div>
 
-    <div class="destino">
-        <p>Escolha uma de nossas unidades e faça sua reserva</p>
-        <div class="inputs">
-            <select name="filial">
-                <option value="">Filial</option>
-                <option value="sp">São Paulo - Barueri</option>
-                <option value="rj">Rio de Janeiro - Copacabana</option>
-                <option value="bh">Paraná - Batel</option>
-            </select>
 
-            <select name="destino">
-                <option value="Destino">Horario</option>
-                <option value="Destino">20:00</option>
-                <option value="Destino">21:00</option>
-                <option value="Destino">22:00</option>
-            </select>
-
-            <input type="date" name="data" placeholder="data">
-            <button>Terminar</button>
-        </div>
-    </div>
-
-    <div class="sub">Algumas dicas de pratos para você experimentar!</div>
-
-    <div class="cards-container">
-        <div class="card">
-            <p>Ozzy Osbourne</p>
-           <img src="https://i.ibb.co/zW1c50qD/images-2.jpg" alt="Burrito de frango">
-        </div>
-
-        <div class="card">
-            <p>Kurt Cobain</p>
-            <img src="https://i.ibb.co/JwqYLsQv/Macarrao-com-Queijo-macn-cheese-1200x900.jpg" alt="Mac and Cheese">
-        </div>
-
-        <div class="card">
-            <p>Bruce Dickinson</p>
-            <img src="https://i.ibb.co/wNVyWF8S/images-1.jpg" alt="Fish Fingers">
-        </div>
-    </div>
-
-  
 </body>
-
 </html>
